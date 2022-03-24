@@ -3,7 +3,7 @@ import { pages } from "../support/pages";
 export class NavigationTest {
   async openPage() {
     await browser.url("/");
-    await pages.basePage.getSignInButton().waitForDisplayed({ timeout: 5000 });
+    await pages.basePage.getSignInButton().waitForDisplayed({ timeout: 15000 });
   }
 
   async pressSignInButton() {
